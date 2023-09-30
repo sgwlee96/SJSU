@@ -1,0 +1,120 @@
+-- MySQL dump 10.13  Distrib 8.0.34, for macos13 (x86_64)
+--
+-- Host: localhost    Database: rair_hospital
+-- ------------------------------------------------------
+-- Server version	8.1.0
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Dumping data for table `Building`
+--
+
+LOCK TABLES `Building` WRITE;
+/*!40000 ALTER TABLE `Building` DISABLE KEYS */;
+INSERT INTO `Building` VALUES (19,'34B',433),(20,'22C',273);
+/*!40000 ALTER TABLE `Building` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `Cared_by`
+--
+
+LOCK TABLES `Cared_by` WRITE;
+/*!40000 ALTER TABLE `Cared_by` DISABLE KEYS */;
+/*!40000 ALTER TABLE `Cared_by` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `Department`
+--
+
+LOCK TABLES `Department` WRITE;
+/*!40000 ALTER TABLE `Department` DISABLE KEYS */;
+/*!40000 ALTER TABLE `Department` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `Doctor`
+--
+
+LOCK TABLES `Doctor` WRITE;
+/*!40000 ALTER TABLE `Doctor` DISABLE KEYS */;
+/*!40000 ALTER TABLE `Doctor` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `Doctor_Contact`
+--
+
+LOCK TABLES `Doctor_Contact` WRITE;
+/*!40000 ALTER TABLE `Doctor_Contact` DISABLE KEYS */;
+/*!40000 ALTER TABLE `Doctor_Contact` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `Hospital_stay`
+--
+
+LOCK TABLES `Hospital_stay` WRITE;
+/*!40000 ALTER TABLE `Hospital_stay` DISABLE KEYS */;
+/*!40000 ALTER TABLE `Hospital_stay` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `Patient`
+--
+
+LOCK TABLES `Patient` WRITE;
+/*!40000 ALTER TABLE `Patient` DISABLE KEYS */;
+INSERT INTO `Patient` VALUES ('John B','M','1991-03-05','336B',19),('Alex C','M','1996-09-08','3311A',20);
+/*!40000 ALTER TABLE `Patient` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `Patient_Contact`
+--
+
+LOCK TABLES `Patient_Contact` WRITE;
+/*!40000 ALTER TABLE `Patient_Contact` DISABLE KEYS */;
+INSERT INTO `Patient_Contact` VALUES ('2220010099',19),('2220103345',20);
+/*!40000 ALTER TABLE `Patient_Contact` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `Stays`
+--
+
+LOCK TABLES `Stays` WRITE;
+/*!40000 ALTER TABLE `Stays` DISABLE KEYS */;
+/*!40000 ALTER TABLE `Stays` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `Ward`
+--
+
+LOCK TABLES `Ward` WRITE;
+/*!40000 ALTER TABLE `Ward` DISABLE KEYS */;
+/*!40000 ALTER TABLE `Ward` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2023-09-22 17:14:12
